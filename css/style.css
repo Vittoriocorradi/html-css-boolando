@@ -10,6 +10,10 @@ RESET
     box-sizing: border-box;
 }
 
+body {
+    padding-top: 65px;
+}
+
 /*
 ------
 TYPO
@@ -20,8 +24,28 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+header, .sale, .sus {
     color: #fff;
+}
+
+.box {
+    font-size: 13px;
+}
+
+main .container .product small {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.discount {
+    color: #ff0000;
+}
+
+.original {
+    text-decoration: line-through;
 }
 
 /*
@@ -32,12 +56,21 @@ COMMON
 
 .wide {
     max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;
     color: inherit;
     margin-right: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.box {
+    padding: 5px 15px;
 }
 
 /*
@@ -55,7 +88,6 @@ header {
 }
 
 header .wide {
-    margin: 0 auto;
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
@@ -68,4 +100,48 @@ header .wide .logo {
 
 header .wide i {
     margin-left: 5px;
+}
+
+/*
+------
+MAIN
+------
+*/
+
+main .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    gap: 10px;
+}
+
+main .container .product {
+    width: calc(33% - 10px);
+    position: relative;
+}
+
+main .container .product .heart {
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 18px;
+}
+
+main .container .product .mod {
+    /* position: absolute; */
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 120px;
+}
+
+main .container .product .sale {
+    background-color: #ff0000;
+}
+
+main .container .product .sus {
+    background-color: #008000;
 }
