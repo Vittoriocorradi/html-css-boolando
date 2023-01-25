@@ -85,6 +85,10 @@ img {
     padding: 5px 15px;
 }
 
+.heart:hover i {
+    color:red;
+}
+
 /*
 ------
 HEADER
