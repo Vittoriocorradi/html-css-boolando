@@ -9,3 +9,63 @@ RESET
     margin: 0;
     box-sizing: border-box;
 }
+
+/*
+------
+TYPO
+------
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color: #fff;
+}
+
+/*
+------
+COMMON
+------
+*/
+
+.wide {
+    max-width: 1400px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 5px;
+}
+
+/*
+------
+HEADER
+------
+*/
+
+header {
+    background-color: #ff6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .wide {
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .wide .logo {
+    height: 28px;
+}
+
+header .wide i {
+    margin-left: 5px;
+}
